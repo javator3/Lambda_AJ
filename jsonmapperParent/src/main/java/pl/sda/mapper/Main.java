@@ -40,5 +40,12 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        try {
+            Movie[] movies1 = mapper.readValue(file, Movie[].class);
+            System.out.println(movies1);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
     }
 }
